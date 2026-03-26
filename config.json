@@ -1,0 +1,27 @@
+{
+  "primary_source": "https://cn.investing.com/indices/nq-100-historical-data",
+  "backup_sources": [
+    "https://finance.yahoo.com/quote/%5ENDX/history",
+    "https://finance.sina.com.cn/stock/usstock/c/NASDAQ.shtml"
+  ],
+  "push": {
+    "enabled": true,
+    "channel": "feishu",
+    "target": "ou_263b05f3f8bcbdb299bd0fdda204b047"
+  },
+  "schedule": {
+    "cron": "7 6 * * *",
+    "timezone": "Asia/Shanghai"
+  },
+  "history": {
+    "enabled": true,
+    "days": 20,
+    "show_stats": true,
+    "separate_message": true
+  },
+  "stocks": {
+    "tech": ["NVDA", "TSLA", "MSFT", "AAPL", "GOOGL", "META", "AMZN"],
+    "chips": ["AVGO", "INTC", "AMD", "QCOM"],
+    "china": ["BABA", "JD", "PDD", "BIDU", "NIO", "XPEV", "LI"]
+  }
+}
